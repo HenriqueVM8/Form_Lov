@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: rgba(244, 192, 202, 0.364);
+
+    min-height: 100vh; /* melhor que height */
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-align: center;
+
+    font-size: 28px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Formulário */
+#contact-form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    padding: 40px 30px;
+    border-radius: 20px;
+
+    width: 90%;
+    min-height: 486px;
+    max-width: 400px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    color: #000000a3;
+}
+
+/* Labels */
+#contact-form label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Inputs e textarea */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* MUITO importante */
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px; /* melhor no mobile */
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Efeito ao focar */
+#contact-form input:focus,
+#contact-form textarea:focus {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(253, 98, 98, 0.6);
+}
+
+/* Textarea */
+#contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Botão */
+#contact-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.615);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover do botão */
+#contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 77, 109, 0.6);
+}
+
+/* Efeito de clique */
+#contact-form button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+    #contact-form {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    #contact-form label {
+        font-size: 14px;
+    }
+
+    #contact-form button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
