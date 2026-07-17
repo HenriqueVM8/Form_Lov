@@ -13,7 +13,7 @@ form.addEventListener("submit", function (event) {
         this
     )
     .then(() => {
-        alert("Mensagem enviada com sucesso! 🩵");
+        alert("Mensagem enviada com sucesso! ❤️");
         form.reset();
     })
     .catch((error) => {
